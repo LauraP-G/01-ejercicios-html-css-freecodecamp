@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Formulario feeckback</title> 
+    <link href="styles.css" rel="stylesheet"/> 
+  </head>
+
+  <body>
+        <h1 id="title"> Feedback form</h1>
+        <p id="description">Your opinion matters to us, help us improve.</p>
+    <form id="survey-form" method="post action"='https://register-demo.freecodecamp.org'>
+    
+      <fieldset>   
+        <label for="name" id="name-label">Name <input id="name" name="name" type="text" required placeholder="Indicate your name"></label>
+        <label for="email" id="email-label">Email <input id="email" name="email" type="email" required placeholder="We promise not to send you advertising"></label>
+        <label for="number" id="number-label">Age (optional) <input id="number" name="age" type="number" min="16" max="100" placeholder="minimum age 16"></label>
+      </fieldset> 
+     
+      <fieldset>
+        <label>Which option best describes your current role?
+          <select id="dropdown">
+            <option>Select current role</option>
+            <option>Student</option>
+            <option>Full time job</option>
+            <option>Full time learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+           </select>
+          </label> 
+          </fieldset>
+          <fieldset> 
+       
+        <legend>Would you recommend learning web development to a friend?</legend>
+          <label><input class="enlinea" type="radio" name="recommend-friend" value="siempre"/> Definitely</label>
+          <label><input class="enlinea"  type="radio" name="recommend-friend" value="quizas"/> Maybe</label>
+          <label><input class="enlinea"  type="radio" name="recommend-friend" value="nunca"/> Not sure</label>
+      </fieldset>
+
+      <fieldset>
+        <label>What programming language is your favorite?</label>
+        <label>
+          <input class="enlinea" type="checkbox" name="favorite-languaje" value="javascript"/>JavaScript
+          <input class="enlinea" type="checkbox" name="favorite-languaje" value="phyton"/>Python
+          <input class="enlinea" type="checkbox" name="favorite-languaje" value="java"/>Java
+          <input class="enlinea" type="checkbox" name="favorite-languaje" value="php"/>PHP
+          <input class="enlinea" type="checkbox" name="favorite-languaje" value="others"/>Others
+         </label> 
+
+        <label>Comment briefly, why is it your favorite language?
+          <textarea name="comment" rows="3" cols="30"></textarea></label>
+     </fieldset>
+
+     <fieldset>
+       <input id="submit" type="submit" value="Submit"/>
+    </fieldset>
+
+ </form>   
+  </body>
+</html>
